@@ -7,11 +7,11 @@ addToDoButton.addEventListener('click', function() {
   paragraph.classList.add('paragpraph-styling');
   paragraph.innerText = inputField.value;
   toDoContainer.appendChild(paragraph);
-  inputField.value = "";
-  paragraph.addEventListener('click', function(){
+  inputField.value = ""; // RESETS THE INPUT FIELD TO EMPTY AFTER ADDING. 
+  paragraph.addEventListener('click', function(){ // PUTS A LINE THROUGH STORED ITEMS UPON SINGLE CLICK. 
     paragraph.style.textDecoration = "line-through";
   });
-  paragraph.addEventListener('dblclick', function(){
+  paragraph.addEventListener('dblclick', function(){ // GETS RID OF STORED ITEMS UPON DOUBLE CLICK. 
     toDoContainer.removeChild(paragraph);
   });
 });
