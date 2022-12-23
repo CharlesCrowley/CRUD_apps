@@ -3,10 +3,10 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
 
 addToDoButton.addEventListener('click', function() {
-  var paragraph = document.createElement('p');
+  var paragraph = document.createElement('p'); //CREATES PARAGRAPH TO STORE ITEMS
   paragraph.classList.add('paragpraph-styling');
   paragraph.innerText = inputField.value;
-  toDoContainer.appendChild(paragraph);
+  toDoContainer.appendChild(paragraph); 
   inputField.value = ""; // RESETS THE INPUT FIELD TO EMPTY AFTER ADDING. 
   paragraph.addEventListener('click', function(){ // PUTS A LINE THROUGH STORED ITEMS UPON SINGLE CLICK. 
     paragraph.style.textDecoration = "line-through";
