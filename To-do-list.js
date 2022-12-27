@@ -3,7 +3,7 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('inputField');
 
 addToDoButton.addEventListener('click', function() { //addToButton element gets an even listener which listens out for a click upon which the function exectures.
-  var paragraph = document.createElement('p'); //CREATES PARAGRAPH TO STORE ITEMS
+  var paragraph = document.createElement('p'); //CREATES PARAGRAPH TO STORE ITEMS.
   paragraph.classList.add('paragpraph-styling');
   paragraph.innerText = inputField.value;
   toDoContainer.appendChild(paragraph); 
